@@ -25,6 +25,6 @@ RUN python -m venv /py && \
         --no-create-home \
         django-user
 RUN chown -R django-user:django-user /app
-ENV PATH "/py/bin:$PATH"
+ENV PATH="/py/bin:$PATH"
 
 USER django-user
